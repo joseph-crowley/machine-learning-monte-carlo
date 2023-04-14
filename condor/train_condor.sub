@@ -1,0 +1,8 @@
+executable = train_condor.sh
+log = train.log
+output = train.out
+error = train.err
+request_gpus = 1
+request_cpus = 4
+requirements = (CUDADeviceName == "Tesla") && (OpSys == "LINUX")
+queue
